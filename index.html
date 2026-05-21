@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saifit | Web Developer Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md">
+    <div class="max-w-6xl mx-auto flex justify-between items-center p-5">
+      <h1 class="text-xl font-bold text-blue-600">Saifit.dev</h1>
+      <nav>
+        <a href="#about" class="mx-3 hover:text-blue-500">Tentang</a>
+        <a href="#projects" class="mx-3 hover:text-blue-500">Proyek</a>
+        <a href="#contact" class="mx-3 hover:text-blue-500">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="text-center py-20 bg-gradient-to-r from-blue-50 to-blue-100">
+    <h2 class="text-4xl font-bold mb-4">Hai, saya <span class="text-blue-600">Saifit</span> 👋</h2>
+    <p class="text-lg mb-6">Fullstack Web Developer | Laravel, PHP dan JavaScript</p>
+    <a href="#projects" class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition">Lihat Proyek</a>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="max-w-5xl mx-auto py-16 px-5">
+    <h3 class="text-3xl font-semibold mb-5 text-center">Tentang Saya</h3>
+    <p class="text-lg leading-relaxed text-gray-700 text-center">
+      Saya seorang <strong>programmer</strong> yang fokus di pengembangan aplikasi berbasis web menggunakan
+      <strong>Laravel, PHP dan JavaScript</strong>.  
+      Saya suka memahami logika di balik teknologi — kenapa teknologi itu ada, masalah apa yang diselesaikan, dan kapan sebaiknya digunakan.
+    </p>
+    <p class="text-center text-gray-600 mt-4">
+      Saat ini saya berfokus menjadi <strong>programmer expert</strong> dan lagi mencari ekosistem yang tepat untuk meningkatkan kemampuan saya di programmer dan softkill pendukungnya. Saya termasuk pribadi yang mau belajar dan terus ingin mengembangkan diri, Terbuka dengan hal-hal baru dan siap untuk kerjasama dengan pihak lain dalam untuk hal yang lebih baik lagi.
+      Terbiasa dengan berbagai kondisi dalam pekerjaan dan mampu beradaptasi dengan baik.
+    </p>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center mt-10">
+      <div class="p-4 bg-white shadow rounded-xl">
+        <h4 class="font-bold text-blue-600 mb-2">Backend</h4>
+        <p>Laravel dan PHP</p>
+      </div>
+      <div class="p-4 bg-white shadow rounded-xl">
+        <h4 class="font-bold text-blue-600 mb-2">Frontend</h4>
+        <p>HTML, CSS, JavaScript, jQuery</p>
+      </div>
+      <div class="p-4 bg-white shadow rounded-xl">
+        <h4 class="font-bold text-blue-600 mb-2">Database</h4>
+        <p>MySQL, SQL Query, Relasi Eloquent</p>
+      </div>
+      <div class="p-4 bg-white shadow rounded-xl">
+        <h4 class="font-bold text-blue-600 mb-2">Tools</h4>
+        <p>Git, VSCode, Postman, phpMyAdmin</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="bg-gray-100 py-16">
+    <div class="max-w-6xl mx-auto px-5">
+      <h3 class="text-3xl font-semibold text-center mb-10">Proyek dan Studi Kasus</h3>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Project 1 -->
+        <div class="bg-white rounded-xl shadow hover:shadow-lg transition p-5">
+          <h4 class="font-bold text-lg mb-2 text-blue-600">Sistem Kartu Stok Barang</h4>
+          <p class="text-sm text-gray-700 mb-3">
+            Aplikasi Laravel untuk mencatat pergerakan stok barang berdasarkan gudang, produk, dan ukuran.
+            Termasuk perhitungan otomatis kolom <code>sumqty</code> dan <code>sumrupiah</code> menggunakan trigger SQL dan job scheduler.
+          </p>
+          <p class="text-xs text-gray-500 mb-2">Tech: Laravel, MySQL, Eloquent</p>
+          <p class="text-xs text-gray-500">Fitur: otomatisasi trigger, perhitungan dinamis, relasi kompleks antar tabel</p>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="bg-white rounded-xl shadow hover:shadow-lg transition p-5">
+          <h4 class="font-bold text-lg mb-2 text-blue-600">Dynamic View Generator</h4>
+          <p class="text-sm text-gray-700 mb-3">
+            Sistem untuk menampilkan view dinamis berdasarkan data dari controller tanpa membuat banyak file blade manual.
+            View menyesuaikan data yang dikirim secara otomatis.
+          </p>
+          <p class="text-xs text-gray-500 mb-2">Tech: Laravel Blade, Controller Dynamic Data</p>
+          <p class="text-xs text-gray-500">Fitur: fleksibilitas tampilan, efisiensi maintenance</p>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="bg-white rounded-xl shadow hover:shadow-lg transition p-5">
+          <h4 class="font-bold text-lg mb-2 text-blue-600">Trigger Journal Otomatis</h4>
+          <p class="text-sm text-gray-700 mb-3">
+            Membuat class PHP dinamis untuk menghasilkan trigger SQL otomatis yang menjurnal transaksi ke tabel kartuakun, 
+            termasuk logika PPN, pengecekan status jurnal, dan perhitungan ulang nilai.
+          </p>
+          <p class="text-xs text-gray-500 mb-2">Tech: Laravel Migration, SQL Trigger, Dynamic Class</p>
+          <p class="text-xs text-gray-500">Fitur: pembuatan trigger otomatis melalui migration</p>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="bg-white rounded-xl shadow hover:shadow-lg transition p-5">
+          <h4 class="font-bold text-lg mb-2 text-blue-600">AJAX Error Handler</h4>
+          <p class="text-sm text-gray-700 mb-3">
+            Implementasi jQuery AJAX di Laravel untuk menampilkan error SQL dari Exception di browser menggunakan alert,
+            tanpa reload halaman.
+          </p>
+          <p class="text-xs text-gray-500 mb-2">Tech: Laravel, jQuery AJAX, JSON Exception</p>
+          <p class="text-xs text-gray-500">Fitur: notifikasi error real-time di sisi client</p>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="bg-white rounded-xl shadow hover:shadow-lg transition p-5">
+          <h4 class="font-bold text-lg mb-2 text-blue-600">Data Relasi & Grouping Otomatis</h4>
+          <p class="text-sm text-gray-700 mb-3">
+            Eksperimen relasi kompleks menggunakan `hasManyThrough`, `groupBy`, dan model dinamis 
+            untuk menghindari data duplikat dan meningkatkan efisiensi query.
+          </p>
+          <p class="text-xs text-gray-500 mb-2">Tech: Laravel Eloquent, Relational Query</p>
+          <p class="text-xs text-gray-500">Fitur: pengelompokan dinamis dan relasi lintas model</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="max-w-4xl mx-auto py-16 px-5 text-center">
+    <h3 class="text-3xl font-semibold mb-6">Kontak Saya</h3>
+    <p class="text-gray-600 mb-6">
+      Tertarik bekerja sama, berdiskusi seputar pemrograman, atau proyek Laravel?
+      Silakan hubungi saya melalui:
+    </p>
+    <div class="space-y-3 text-lg">
+      <p>📧 Email: <a href="mailto:saifit2787@gmail.com.com" class="text-blue-600 hover:underline">saifit2787@gmail.com.com</a></p>
+      <p>💻 GitHub: <a href="https://github.com/" target="_blank" class="text-blue-600 hover:underline">github.com/saifit2787</a></p>
+      <p>💬 WhatsApp: <a href="https://wa.me/6281703006565" class="text-blue-600 hover:underline">+62 81-70300-6565</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-200 text-center py-6 text-sm text-gray-600">
+    © 2025 Saifit — Dibuat dengan ❤️ menggunakan Laravel & Tailwind CSS
+  </footer>
+
+</body>
+</html>
